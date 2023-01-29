@@ -2,13 +2,13 @@
 
 ## 0. 아키텍쳐 및 구성
 ![archi](https://user-images.githubusercontent.com/117608997/215339332-e862383c-69a5-4234-8555-8ab551142137.jpg)
-■ Wordpress – MySQL 연동
-■ Jumpbox를 통해서 서버 관리
-■ Application Gateway를 이용해 클라이언트 접속 허용
-■ Web
+■ Wordpress – MySQL 연동 </br>
+■ Jumpbox를 통해서 서버 관리 </br>
+■ Application Gateway를 이용해 클라이언트 접속 허용 </br>
+■ Web </br>
 - subnet : ubuntu 18.04LTS + wordpress 가상머신 운영
-■ DB Subnet: MySQL database
-■ Web tier에 Autoscale 구성
+■ DB Subnet: MySQL database </br>
+■ Web tier에 Autoscale 구성 </br>
 ■ Azure DNS 구성을 통해 도메인 기반 통신
 </br><hr/>
 
@@ -58,4 +58,18 @@
 
   sudo bash -c 'echo "//wordpressa.file.core.windows.net/wordpressdata /mnt/wordpressdata cifs        nofail,credentials=/etc/smbcredentials/wordpressa.cred,dir_mode=0777,file_mode=0777,serverino,nosharesock,actimeo=30" >> /etc/fstab'
   sudo mount -t cifs //wordpressa.file.core.windows.net/wordpressdata /mnt/wordpressdata -o credentials=/etc/smbcredentials/wordpressa.cred,dir_mode=0777,file_mode=0777,serverino,nosharesock,actimeo=30
+  ```
+  - 스크립트 실행
+  ```
+  cd mnt/wordpressdata
+  . wordpress.sh
+  ```
+  ```
+  # 웹 서버 설치
+  nano wordpress.sh
+  . wordpress.sh
+  ```
+- Azure Database for MySQL 만들기
+![db1](https://user-images.githubusercontent.com/117608997/215339165-d2c1e4e1-b6db-402c-97b4-27f3ab532294.jpg)
+![db2](https://user-images.githubusercontent.com/117608997/215339167-e204a93b-5d9c-4e31-8ecc-345bdcd06fa5.jpg)
   

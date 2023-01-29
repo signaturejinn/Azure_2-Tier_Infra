@@ -47,7 +47,7 @@
 ![Filestorage5](https://user-images.githubusercontent.com/117608997/215339146-cc4b0e3a-5847-42b0-aa7e-1517e6a1451f.jpg)
 </br></br>
 
-#### - 연결 </br>
+  - 연결 </br>
 ```
   sudo mkdir /mnt/wordpressdata
   if [ ! -d "/etc/smbcredentials" ]; then
@@ -62,7 +62,8 @@
   sudo bash -c 'echo "//wordpressa.file.core.windows.net/wordpressdata /mnt/wordpressdata cifs        nofail,credentials=/etc/smbcredentials/wordpressa.cred,dir_mode=0777,file_mode=0777,serverino,nosharesock,actimeo=30" >> /etc/fstab'
   sudo mount -t cifs //wordpressa.file.core.windows.net/wordpressdata /mnt/wordpressdata -o credentials=/etc/smbcredentials/wordpressa.cred,dir_mode=0777,file_mode=0777,serverino,nosharesock,actimeo=30
 ```
-#### - 스크립트 실행 </br>
+
+  - 스크립트 실행 </br>
 ```
 cd mnt/wordpressdata
 . wordpress.sh

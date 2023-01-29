@@ -130,8 +130,8 @@ ERROR 9000 (HY000): Client with IP address '20.196.206.171' is not allowed to co
 </br>
 
 ### - Connection 허용 설정
-#### - MySQL -> [연결보안] 메뉴 실행
-##### - Azure 서비스 방문 허용 : '아니오 -> 예'로 설정
+  - MySQL -> [연결보안] 메뉴 실행
+     - Azure 서비스 방문 허용 : '아니오 -> 예'로 설정
 </br>
 
 ![db3](https://user-images.githubusercontent.com/117608997/215339172-faebba69-f564-4ea3-93cd-5ef13f901474.jpg)

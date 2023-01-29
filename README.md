@@ -31,7 +31,7 @@
 </br><hr/>
 
 ## 4. 웹 서버 이미지 생성 위한 VM 생성 
-- 가상머신 생성
+### - 가상머신 생성
 ![VM1](https://user-images.githubusercontent.com/117608997/215339123-ea9e5b9f-5201-4f12-a0f6-cb0674a994ca.jpg)
 ![VM2](https://user-images.githubusercontent.com/117608997/215339124-56df4bcf-0fce-4e84-9814-29369d56738d.jpg)
 </br>
@@ -41,12 +41,12 @@
 ![Filestorage2](https://user-images.githubusercontent.com/117608997/215339134-1ccc762f-0d46-4788-8e26-fd3a4e9757e4.jpg)
 </br>
 
-- 파일 스토리지 공유
+### - 파일 스토리지 공유
 ![Filestorage3](https://user-images.githubusercontent.com/117608997/215339137-8675092d-34ac-4617-93a7-bc818e974c66.jpg)
 ![Filestorage4](https://user-images.githubusercontent.com/117608997/215339142-b237ef82-6d1f-4790-922d-e412209a6465.jpg)
 ![Filestorage5](https://user-images.githubusercontent.com/117608997/215339146-cc4b0e3a-5847-42b0-aa7e-1517e6a1451f.jpg)
 </br>
-  - 연결
+  - 연결 </br>
   ```
   sudo mkdir /mnt/wordpressdata
   if [ ! -d "/etc/smbcredentials" ]; then
@@ -61,7 +61,7 @@
   sudo bash -c 'echo "//wordpressa.file.core.windows.net/wordpressdata /mnt/wordpressdata cifs        nofail,credentials=/etc/smbcredentials/wordpressa.cred,dir_mode=0777,file_mode=0777,serverino,nosharesock,actimeo=30" >> /etc/fstab'
   sudo mount -t cifs //wordpressa.file.core.windows.net/wordpressdata /mnt/wordpressdata -o credentials=/etc/smbcredentials/wordpressa.cred,dir_mode=0777,file_mode=0777,serverino,nosharesock,actimeo=30
   ```
-  - 스크립트 실행
+ ###  - 스크립트 실행
   ```
   cd mnt/wordpressdata
   . wordpress.sh
@@ -71,7 +71,7 @@
   nano wordpress.sh
   . wordpress.sh
   ```
-- Azure Database for MySQL 만들기
+### - Azure Database for MySQL 만들기
 ![db1](https://user-images.githubusercontent.com/117608997/215339165-d2c1e4e1-b6db-402c-97b4-27f3ab532294.jpg)
 ![db2](https://user-images.githubusercontent.com/117608997/215339167-e204a93b-5d9c-4e31-8ecc-345bdcd06fa5.jpg)
   

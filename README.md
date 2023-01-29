@@ -84,7 +84,7 @@ nano wordpress.sh
     - wp-config.php 편집
 </br>
 
-### - 가상머신(web1) 로그인
+  - 가상머신(web1) 로그인
 ```
 root@Web1:~# ls /var/www/html/
 index.php             wp-config-sample.php  wp-login.php

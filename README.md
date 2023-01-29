@@ -2,13 +2,14 @@
 
 ## 0. 아키텍쳐 및 구성
 ![archi](https://user-images.githubusercontent.com/117608997/215339332-e862383c-69a5-4234-8555-8ab551142137.jpg)
-- Wordpress – MySQL 연동 </br>
-- Jumpbox를 통해서 서버 관리 </br>
-- Application Gateway를 이용해 클라이언트 접속 허용 </br>
-- Web </br>
+- Wordpress – MySQL 연동
+- Jumpbox를 통해서 서버 관리
+- Application Gateway를 이용해 클라이언트 접속 허용
+- Web
   - subnet : ubuntu 18.04LTS + wordpress 가상머신 운영
-- DB Subnet: MySQL database </br>
-- Web tier에 Autoscale 구성 </br>
+</br>
+- DB Subnet: MySQL database 
+- Web tier에 Autoscale 구성
 - Azure DNS 구성을 통해 도메인 기반 통신
 
 </br></br>

@@ -78,10 +78,11 @@
 </br>
 
 ### - wordpress 환경구성
-###   - wordpress 구성파일에 앞서 생성한 mysql hostname, usernmae, password를 설정
-###     - wp-config.php 편집
+#### - wordpress 구성파일에 앞서 생성한 mysql hostname, usernmae, password를 설정
+##### - wp-config.php 편집
 </br>
-###  - 가상머신(web1) 로그인 </br>
+#### - 가상머신(web1) 로그인
+
 ```
 root@Web1:~# ls /var/www/html/
 index.php             wp-config-sample.php  wp-login.php
@@ -92,7 +93,9 @@ wp-admin              wp-includes           wp-trackback.php
 wp-blog-header.php    wp-links-opml.php     xmlrpc.php
 wp-comments-post.php  wp-load.php
 ```
+
 </br>
+
 ### - mysql 클라이언트 프로그램 설치 후 구성 정보 수정
 
 ```

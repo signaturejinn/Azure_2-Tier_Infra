@@ -47,7 +47,7 @@
 ![Filestorage5](https://user-images.githubusercontent.com/117608997/215339146-cc4b0e3a-5847-42b0-aa7e-1517e6a1451f.jpg)
 </br></br>
 
-###  - 연결 </br>
+#### - 연결 </br>
 ```
   sudo mkdir /mnt/wordpressdata
   if [ ! -d "/etc/smbcredentials" ]; then
@@ -62,7 +62,7 @@
   sudo bash -c 'echo "//wordpressa.file.core.windows.net/wordpressdata /mnt/wordpressdata cifs        nofail,credentials=/etc/smbcredentials/wordpressa.cred,dir_mode=0777,file_mode=0777,serverino,nosharesock,actimeo=30" >> /etc/fstab'
   sudo mount -t cifs //wordpressa.file.core.windows.net/wordpressdata /mnt/wordpressdata -o credentials=/etc/smbcredentials/wordpressa.cred,dir_mode=0777,file_mode=0777,serverino,nosharesock,actimeo=30
 ```
-###   - 스크립트 실행 </br>
+#### - 스크립트 실행 </br>
 ```
   cd mnt/wordpressdata
   . wordpress.sh
@@ -72,17 +72,19 @@
   nano wordpress.sh
   . wordpress.sh
 ```
+</br>
+
 ### - Azure Database for MySQL 만들기
 ![db1](https://user-images.githubusercontent.com/117608997/215339165-d2c1e4e1-b6db-402c-97b4-27f3ab532294.jpg)
 ![db2](https://user-images.githubusercontent.com/117608997/215339167-e204a93b-5d9c-4e31-8ecc-345bdcd06fa5.jpg)
 </br>
 
 ### - wordpress 환경구성
-###   - wordpress 구성파일에 앞서 생성한 mysql hostname, usernmae, password를 설정
-###     - wp-config.php 편집
+  - wordpress 구성파일에 앞서 생성한 mysql hostname, usernmae, password를 설정
+    - wp-config.php 편집
 </br>
 
-###   - 가상머신(web1) 로그인
+#### - 가상머신(web1) 로그인
 
 ```
 root@Web1:~# ls /var/www/html/
@@ -125,17 +127,54 @@ ERROR 9000 (HY000): Client with IP address '20.196.206.171' is not allowed to co
 ```
 </br>
 
-=> 실패
+➡️ 실패
 </br>
 
 ### - Connection 허용 설정
   - MySQL -> [연결보안] 메뉴 실행
-     - Azure 서비스 방문 허용 : '아니오 -> 예'로 설정
+     - Azure 서비스 방문 허용 : '아니오 ➡️ 예'로 설정
+![db3](https://user-images.githubusercontent.com/117608997/215339172-faebba69-f564-4ea3-93cd-5ef13f901474.jpg)
 </br>
 
-![db3](https://user-images.githubusercontent.com/117608997/215339172-faebba69-f564-4ea3-93cd-5ef13f901474.jpg)
+### - 다시 접속 TEST 후 연결되면 wordpress 데이터베이스 생성
+```
+# mysql -h wordpress1-mysqldb.mysql.database.azure.com -u btcuser@wordpress1-mysqldb -p
+password: <password>
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Enter password: 
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 64548
+Server version: 5.6.47.0 MySQL Community Server (GPL)
+
+Copyright (c) 2000, 2022, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
 
+mysql> CREATE DATABASE wordpressdb DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+Query OK, 1 row affected (0.15 sec)
+
+mysql> FLUSH PRIVILEGES;
+Query OK, 0 rows affected (0.10 sec)
+
+mysql> show databases;
+mysql> exit;
+```
+
+### - wordpress 실행
+  - 가상머신의 공인 IP를 이용해 접속 TEST
+![wordpress1](https://user-images.githubusercontent.com/117608997/215339192-0d250c41-446c-4ffc-af15-c1dbffef6ad8.jpg)
+![wordpress2](https://user-images.githubusercontent.com/117608997/215339196-46e4aea9-a1ef-4d56-a26d-78f21feb827c.jpg)
+</br>
+
+  - 관리자 권한 설정
+  - 로그인 후 워드프레스 동작
+![wordpress3](https://user-images.githubusercontent.com/117608997/215339206-adb8ae78-866e-47e7-a3ad-0e1039f22b0b.jpg)
+</br>
     
     
   

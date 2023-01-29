@@ -47,8 +47,8 @@
 ![Filestorage5](https://user-images.githubusercontent.com/117608997/215339146-cc4b0e3a-5847-42b0-aa7e-1517e6a1451f.jpg)
 </br></br>
 
- #### - 연결 </br>
-  ```
+###  - 연결 </br>
+```
   sudo mkdir /mnt/wordpressdata
   if [ ! -d "/etc/smbcredentials" ]; then
   sudo mkdir /etc/smbcredentials
@@ -61,9 +61,9 @@
 
   sudo bash -c 'echo "//wordpressa.file.core.windows.net/wordpressdata /mnt/wordpressdata cifs        nofail,credentials=/etc/smbcredentials/wordpressa.cred,dir_mode=0777,file_mode=0777,serverino,nosharesock,actimeo=30" >> /etc/fstab'
   sudo mount -t cifs //wordpressa.file.core.windows.net/wordpressdata /mnt/wordpressdata -o credentials=/etc/smbcredentials/wordpressa.cred,dir_mode=0777,file_mode=0777,serverino,nosharesock,actimeo=30
-  ```
- ####  - 스크립트 실행 </br>
-  ```
+```
+###   - 스크립트 실행 </br>
+```
   cd mnt/wordpressdata
   . wordpress.sh
   ```
@@ -71,18 +71,18 @@
   # 웹 서버 설치
   nano wordpress.sh
   . wordpress.sh
-  ```
+```
 ### - Azure Database for MySQL 만들기
 ![db1](https://user-images.githubusercontent.com/117608997/215339165-d2c1e4e1-b6db-402c-97b4-27f3ab532294.jpg)
 ![db2](https://user-images.githubusercontent.com/117608997/215339167-e204a93b-5d9c-4e31-8ecc-345bdcd06fa5.jpg)
 </br>
 
 ### - wordpress 환경구성
-#### - wordpress 구성파일에 앞서 생성한 mysql hostname, usernmae, password를 설정
-##### - wp-config.php 편집
+###   - wordpress 구성파일에 앞서 생성한 mysql hostname, usernmae, password를 설정
+###     - wp-config.php 편집
 </br>
 
-#### - 가상머신(web1) 로그인
+###   - 가상머신(web1) 로그인
 
 ```
 root@Web1:~# ls /var/www/html/
@@ -117,7 +117,6 @@ define( 'DB_HOST', 'wordpress1-mysqldb.mysql.database.azure.com' );
 </br>
 
 ### - mysql 접속 TEST
-
 ```
 # mysql -h wordpress1-mysqldb.mysql.database.azure.com -u btcuser@wordpress1-mysqldb -p
 mysql: [Warning] Using a password on the command line interface can be insecure.

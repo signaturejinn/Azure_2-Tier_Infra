@@ -211,8 +211,8 @@ mysql> exit;
 </br>
 
 - 백엔드 대상
-
 </br>
+
 ![aag7](https://user-images.githubusercontent.com/117608997/215339267-3d010c60-4374-4f2f-989d-1358aafb11e9.jpg)
 </br>
 
@@ -226,7 +226,7 @@ mysql> exit;
 #### ✅ 해결방안 1 - VMSS 업그레이드 해주기
 
 ![trouble2](https://user-images.githubusercontent.com/117608997/215339286-ab086ab6-117a-40eb-a105-2a446c4cb219.jpg)
-</br></br>
+</br></br></br>
 
 #### ❗ 502 Bad Gateway 오류 2
 
@@ -239,7 +239,7 @@ mysql> exit;
 
 ![trouble5](https://user-images.githubusercontent.com/117608997/215339303-59669c64-0f23-47a2-a8f2-2f1728934304.jpg)
 
-####  ➡️ 해결
+###  ➡️ 해결
 
 
   

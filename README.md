@@ -11,7 +11,7 @@
 - Web tier에 Autoscale 구성 </br>
 - Azure DNS 구성을 통해 도메인 기반 통신
 
-</br><hr/>
+</br>
 
 ## 1. 리소스 그룹 생성
 ![Resource Group](https://user-images.githubusercontent.com/117608997/215339048-06455906-e075-4eb8-aa88-d55cfb62b586.jpg)
@@ -21,14 +21,14 @@
 ![Vnet1](https://user-images.githubusercontent.com/117608997/215339093-454e1a62-aa1d-436b-99c7-41f4993bee57.jpg)
 ![Vnet2](https://user-images.githubusercontent.com/117608997/215339101-e1c8ad5e-8095-4869-8ad0-f8cb53e4dee5.jpg)
 ![Vnet3](https://user-images.githubusercontent.com/117608997/215339103-01c9c6f8-ee51-4fd6-b85c-88db4f7dd3ac.jpg)
-</br><hr/>
+</br>
 
 ## 3. 네트워크 보안 그룹 생성
 - Bastion Security Group
 - AGG Security Group
 - Web Security Group
 
-</br><hr/>
+</br>
 
 ## 4. 웹 서버 이미지 생성 위한 VM 생성 
 ### - 가상머신 생성

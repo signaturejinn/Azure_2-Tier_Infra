@@ -35,8 +35,8 @@
 ![VM1](https://user-images.githubusercontent.com/117608997/215339123-ea9e5b9f-5201-4f12-a0f6-cb0674a994ca.jpg)
 ![VM2](https://user-images.githubusercontent.com/117608997/215339124-56df4bcf-0fce-4e84-9814-29369d56738d.jpg)
 </br>
-
-- 파일 스토리지 계정 생성  스크립트 파일 전달 / 스크립트 파일 전달 후 마운트 및 설치
+</br>
+### - 파일 스토리지 계정 생성  스크립트 파일 전달 / 스크립트 파일 전달 후 마운트 및 설치
 ![Filestorage1](https://user-images.githubusercontent.com/117608997/215339131-3b27b8ba-cc68-4748-ba07-9d0e9f80f02a.jpg)
 ![Filestorage2](https://user-images.githubusercontent.com/117608997/215339134-1ccc762f-0d46-4788-8e26-fd3a4e9757e4.jpg)
 </br>
@@ -46,7 +46,7 @@
 ![Filestorage4](https://user-images.githubusercontent.com/117608997/215339142-b237ef82-6d1f-4790-922d-e412209a6465.jpg)
 ![Filestorage5](https://user-images.githubusercontent.com/117608997/215339146-cc4b0e3a-5847-42b0-aa7e-1517e6a1451f.jpg)
 </br>
-  - 연결 </br>
+ ###  - 연결 </br>
   ```
   sudo mkdir /mnt/wordpressdata
   if [ ! -d "/etc/smbcredentials" ]; then

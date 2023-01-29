@@ -124,8 +124,6 @@ mysql: [Warning] Using a password on the command line interface can be insecure.
 Enter password: 
 ERROR 9000 (HY000): Client with IP address '20.196.206.171' is not allowed to connect to this MySQL server.
 ```
-</br>
-
 ### ➡️ 실패
 </br>
 
@@ -172,6 +170,8 @@ mysql> exit;
 
   - 관리자 권한 설정
   - 로그인 후 워드프레스 동작
+</br>
+
 ![wordpress3](https://user-images.githubusercontent.com/117608997/215339206-adb8ae78-866e-47e7-a3ad-0e1039f22b0b.jpg)
 </br>
     

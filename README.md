@@ -15,13 +15,13 @@
 
 ## 1. 리소스 그룹 생성
 ![Resource Group](https://user-images.githubusercontent.com/117608997/215339048-06455906-e075-4eb8-aa88-d55cfb62b586.jpg)
-</br></br>
+</br></br><br>
 
 ## 2. 가상 네트워크 생성
 ![Vnet1](https://user-images.githubusercontent.com/117608997/215339093-454e1a62-aa1d-436b-99c7-41f4993bee57.jpg)
 ![Vnet2](https://user-images.githubusercontent.com/117608997/215339101-e1c8ad5e-8095-4869-8ad0-f8cb53e4dee5.jpg)
 ![Vnet3](https://user-images.githubusercontent.com/117608997/215339103-01c9c6f8-ee51-4fd6-b85c-88db4f7dd3ac.jpg)
-</br></br>
+</br></br></br>
 
 ## 3. 네트워크 보안 그룹 생성
 - Bastion Security Group
@@ -34,7 +34,7 @@
 ### - 가상머신 생성
 ![VM1](https://user-images.githubusercontent.com/117608997/215339123-ea9e5b9f-5201-4f12-a0f6-cb0674a994ca.jpg)
 ![VM2](https://user-images.githubusercontent.com/117608997/215339124-56df4bcf-0fce-4e84-9814-29369d56738d.jpg)
-</br></br>
+</br></br></br>
 
 ### - 파일 스토리지 계정 생성  스크립트 파일 전달 / 스크립트 파일 전달 후 마운트 및 설치
 ![Filestorage1](https://user-images.githubusercontent.com/117608997/215339131-3b27b8ba-cc68-4748-ba07-9d0e9f80f02a.jpg)
@@ -183,7 +183,7 @@ mysql> exit;
 ### - 네트워킹
 ![vmss3](https://user-images.githubusercontent.com/117608997/215339223-a9f22e23-8d66-4de5-89fd-b47c45a4d936.jpg)
 ![vmss4](https://user-images.githubusercontent.com/117608997/215339227-f31ed7e6-a4df-4094-8a81-229e780c3085.jpg)
-</br></br>
+</br></br></br></br>
 
 ## 6. AAG 생성
 ### - 기본 사항
@@ -212,7 +212,7 @@ mysql> exit;
 - 백엔드 대상
 
 ![aag7](https://user-images.githubusercontent.com/117608997/215339267-3d010c60-4374-4f2f-989d-1358aafb11e9.jpg)
-</br></br>
+</br></br></br></br>
 
 ## 7. 결과 및 Trouble Shooting
 ### - Trouble Shooting

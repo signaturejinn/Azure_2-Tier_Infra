@@ -81,6 +81,7 @@
 #### - wordpress 구성파일에 앞서 생성한 mysql hostname, usernmae, password를 설정
 ##### - wp-config.php 편집
 </br>
+
 #### - 가상머신(web1) 로그인
 
 ```
@@ -93,7 +94,6 @@ wp-admin              wp-includes           wp-trackback.php
 wp-blog-header.php    wp-links-opml.php     xmlrpc.php
 wp-comments-post.php  wp-load.php
 ```
-
 </br>
 
 ### - mysql 클라이언트 프로그램 설치 후 구성 정보 수정
@@ -123,7 +123,8 @@ mysql: [Warning] Using a password on the command line interface can be insecure.
 Enter password: 
 ERROR 9000 (HY000): Client with IP address '20.196.206.171' is not allowed to connect to this MySQL server.
 ```
-    </br>
+</br>
+
 => 실패
 </br>
 
@@ -131,6 +132,7 @@ ERROR 9000 (HY000): Client with IP address '20.196.206.171' is not allowed to co
 #### - MySQL -> [연결보안] 메뉴 실행
 ##### - Azure 서비스 방문 허용 : '아니오 -> 예'로 설정
 </br>
+
 ![db3](https://user-images.githubusercontent.com/117608997/215339172-faebba69-f564-4ea3-93cd-5ef13f901474.jpg)
 
 

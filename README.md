@@ -204,10 +204,9 @@ mysql> exit;
 </br>
 
 ### - 회람 규칙 추가
-</br>
 - 수신기
-
 </br>
+
 ![aag6](https://user-images.githubusercontent.com/117608997/215339261-1e97c515-6450-42aa-9f1f-42b63534046a.jpg)
 </br>
 
@@ -235,9 +234,9 @@ mysql> exit;
 </br>
 
 #### ✅ 해결방안 2 - VMSS 이미지 설정
-" VMSS 이미지를 선택할 때 VM 이미지 만들어놓은것으로 설정하지 않고 Ubuntu 그대로 이미지를 선택해서 Web Server가 빈깡통이라서 Bad Gateway가 출력되었다.
-
+> VMSS 이미지를 선택할 때 VM 이미지 만들어놓은것으로 설정하지 않고 Ubuntu 그대로 이미지를 선택해서 Web Server가 빈깡통이라서 Bad Gateway가 출력되었다.
 </br>
+
 ![trouble5](https://user-images.githubusercontent.com/117608997/215339303-59669c64-0f23-47a2-a8f2-2f1728934304.jpg)
 
 ####  ➡️ 해결

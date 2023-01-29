@@ -27,6 +27,7 @@
 - Bastion Security Group
 - AGG Security Group
 - Web Security Group
+
 </br><hr/>
 
 ## 4. 웹 서버 이미지 생성 위한 VM 생성 

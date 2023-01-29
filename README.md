@@ -10,7 +10,6 @@
 - DB Subnet: MySQL database </br>
 - Web tier에 Autoscale 구성 </br>
 - Azure DNS 구성을 통해 도메인 기반 통신
-
 </br><hr/>
 
 ## 1. 리소스 그룹 생성

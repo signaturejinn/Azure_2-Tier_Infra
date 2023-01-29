@@ -64,13 +64,13 @@
 ```
 #### - 스크립트 실행 </br>
 ```
-  cd mnt/wordpressdata
-  . wordpress.sh
-  ```
-  ```
-  # 웹 서버 설치
-  nano wordpress.sh
-  . wordpress.sh
+cd mnt/wordpressdata
+. wordpress.sh
+```
+```
+# 웹 서버 설치
+nano wordpress.sh
+. wordpress.sh
 ```
 </br>
 
@@ -84,8 +84,7 @@
     - wp-config.php 편집
 </br>
 
-#### - 가상머신(web1) 로그인
-
+### - 가상머신(web1) 로그인
 ```
 root@Web1:~# ls /var/www/html/
 index.php             wp-config-sample.php  wp-login.php
@@ -127,7 +126,7 @@ ERROR 9000 (HY000): Client with IP address '20.196.206.171' is not allowed to co
 ```
 </br>
 
-➡️ 실패
+### ➡️ 실패
 </br>
 
 ### - Connection 허용 설정

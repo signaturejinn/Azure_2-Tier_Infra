@@ -15,7 +15,7 @@
 
 ## 1. 리소스 그룹 생성
 ![Resource Group](https://user-images.githubusercontent.com/117608997/215339048-06455906-e075-4eb8-aa88-d55cfb62b586.jpg)
-</br><hr/>
+</br>
 
 ## 2.가상 네트워크 생성
 ![Vnet1](https://user-images.githubusercontent.com/117608997/215339093-454e1a62-aa1d-436b-99c7-41f4993bee57.jpg)

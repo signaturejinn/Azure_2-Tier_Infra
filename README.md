@@ -78,10 +78,10 @@
 </br>
 
 ### - wordpress 환경구성
-#### - wordpress 구성파일에 앞서 생성한 mysql hostname, usernmae, password를 설정
-##### - wp-config.php 편집
+###   - wordpress 구성파일에 앞서 생성한 mysql hostname, usernmae, password를 설정
+###     - wp-config.php 편집
 </br>
-#### - 가상머신(web1) 로그인 </br>
+###  - 가상머신(web1) 로그인 </br>
 ```
 root@Web1:~# ls /var/www/html/
 index.php             wp-config-sample.php  wp-login.php
@@ -94,6 +94,7 @@ wp-comments-post.php  wp-load.php
 ```
 </br>
 ### - mysql 클라이언트 프로그램 설치 후 구성 정보 수정
+
 ```
     클라이언트 프로그램 설치
 # apt install mysql-client-core-5.7 -y
@@ -109,9 +110,10 @@ define( 'DB_PASSWORD', '<password>' );
 /** Database hostname */
 define( 'DB_HOST', 'wordpress1-mysqldb.mysql.database.azure.com' );
 ```
-    </br>
+</br>
 
 ### - mysql 접속 TEST
+
 ```
 # mysql -h wordpress1-mysqldb.mysql.database.azure.com -u btcuser@wordpress1-mysqldb -p
 mysql: [Warning] Using a password on the command line interface can be insecure.

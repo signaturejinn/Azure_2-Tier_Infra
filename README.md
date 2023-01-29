@@ -62,7 +62,7 @@
   sudo bash -c 'echo "//wordpressa.file.core.windows.net/wordpressdata /mnt/wordpressdata cifs        nofail,credentials=/etc/smbcredentials/wordpressa.cred,dir_mode=0777,file_mode=0777,serverino,nosharesock,actimeo=30" >> /etc/fstab'
   sudo mount -t cifs //wordpressa.file.core.windows.net/wordpressdata /mnt/wordpressdata -o credentials=/etc/smbcredentials/wordpressa.cred,dir_mode=0777,file_mode=0777,serverino,nosharesock,actimeo=30
   ```
- ###  - 스크립트 실행
+ ####  - 스크립트 실행 </br>
   ```
   cd mnt/wordpressdata
   . wordpress.sh
@@ -75,4 +75,21 @@
 ### - Azure Database for MySQL 만들기
 ![db1](https://user-images.githubusercontent.com/117608997/215339165-d2c1e4e1-b6db-402c-97b4-27f3ab532294.jpg)
 ![db2](https://user-images.githubusercontent.com/117608997/215339167-e204a93b-5d9c-4e31-8ecc-345bdcd06fa5.jpg)
+</br>
+
+### - wordpress 환경구성
+    - wordpress 구성파일에 앞서 생성한 mysql hostname, usernmae, password를 설정
+        - wp-config.php 편집
+    - 가상머신(web1) 로그인 </br>
+    ```
+root@Web1:~# ls /var/www/html/
+index.php             wp-config-sample.php  wp-login.php
+license.txt           wp-config.php         wp-mail.php
+readme.html           wp-content            wp-settings.php
+wp-activate.php       wp-cron.php           wp-signup.php
+wp-admin              wp-includes           wp-trackback.php
+wp-blog-header.php    wp-links-opml.php     xmlrpc.php
+wp-comments-post.php  wp-load.php
+   ```
+    
   

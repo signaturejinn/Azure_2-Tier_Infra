@@ -17,7 +17,7 @@
 ![Resource Group](https://user-images.githubusercontent.com/117608997/215339048-06455906-e075-4eb8-aa88-d55cfb62b586.jpg)
 </br></br>
 
-## 2.가상 네트워크 생성
+## 2. 가상 네트워크 생성
 ![Vnet1](https://user-images.githubusercontent.com/117608997/215339093-454e1a62-aa1d-436b-99c7-41f4993bee57.jpg)
 ![Vnet2](https://user-images.githubusercontent.com/117608997/215339101-e1c8ad5e-8095-4869-8ad0-f8cb53e4dee5.jpg)
 ![Vnet3](https://user-images.githubusercontent.com/117608997/215339103-01c9c6f8-ee51-4fd6-b85c-88db4f7dd3ac.jpg)
@@ -169,11 +169,68 @@ mysql> exit;
 </br>
 
   - 관리자 권한 설정
-  - 로그인 후 워드프레스 동작
 </br>
-
+  - 로그인 후 워드프레스 동작
 ![wordpress3](https://user-images.githubusercontent.com/117608997/215339206-adb8ae78-866e-47e7-a3ad-0e1039f22b0b.jpg)
 </br>
-    
-    
+
+## 5. VMSS 생성
+### - 기본사항
+![vmss1](https://user-images.githubusercontent.com/117608997/215339217-61359fc9-d49d-4855-8374-d9880cf204f8.jpg)
+![vmss2](https://user-images.githubusercontent.com/117608997/215339221-59de7e26-bbe5-4470-95b0-6b585ee09d9b.jpg)
+</br>
+
+### - 네트워킹
+![vmss3](https://user-images.githubusercontent.com/117608997/215339223-a9f22e23-8d66-4de5-89fd-b47c45a4d936.jpg)
+![vmss4](https://user-images.githubusercontent.com/117608997/215339227-f31ed7e6-a4df-4094-8a81-229e780c3085.jpg)
+</br>
+
+## 6. AAG 생성
+### - 기본 사항
+![aag1](https://user-images.githubusercontent.com/117608997/215339239-3c32ba70-b4eb-4ea6-be32-3955d79aafa3.jpg)
+</br>
+
+### - 프런트 엔드
+![aag2](https://user-images.githubusercontent.com/117608997/215339243-1507a0df-a000-4058-892c-fc3652b060a3.jpg)
+</br>
+
+### - 백엔드 풀
+![aag3](https://user-images.githubusercontent.com/117608997/215339246-7935b0f3-06e9-4c20-b642-47e7e3df89b9.jpg)
+![aag4](https://user-images.githubusercontent.com/117608997/215339253-e230a0e6-679c-4e55-ad80-b7c923879557.jpg)
+</br>
+
+### - 구성
+![aag5](https://user-images.githubusercontent.com/117608997/215339256-d17e87ce-6adc-4ced-bbe8-5a6119e66448.jpg)
+</br>
+
+### - 회람 규칙 추가
+- 수신기
+![aag6](https://user-images.githubusercontent.com/117608997/215339261-1e97c515-6450-42aa-9f1f-42b63534046a.jpg)
+</br>
+
+- 백엔드 대상
+![aag7](https://user-images.githubusercontent.com/117608997/215339267-3d010c60-4374-4f2f-989d-1358aafb11e9.jpg)
+</br>
+
+## 7. 결과 및 Trouble Shooting
+### - Trouble Shooting
+#### ❗ 502 Bad Gateway 오류 1
+![trouble1](https://user-images.githubusercontent.com/117608997/215339282-dcabab1d-d248-4006-8fe2-b2a98e311c71.jpg)
+</br>
+#### ✅ 해결방안 1 - VMSS 업그레이드 해주기
+![trouble2](https://user-images.githubusercontent.com/117608997/215339286-ab086ab6-117a-40eb-a105-2a446c4cb219.jpg)
+</br></br>
+
+#### ❗ 502 Bad Gateway 오류 2
+![trouble4](https://user-images.githubusercontent.com/117608997/215339297-1bdce3c5-bafe-4d6a-9972-fc9f358ed1bb.jpg)
+</br>
+
+#### ✅ 해결방안 2 - VMSS 이미지 설정
+" VMSS 이미지를 선택할 때 VM 이미지 만들어놓은것으로 설정하지 않고 Ubuntu 그대로 이미지를 선택해서 Web Server가 빈깡통이라서 Bad Gateway가 출력되었다.
+</br>
+
+![trouble5](https://user-images.githubusercontent.com/117608997/215339303-59669c64-0f23-47a2-a8f2-2f1728934304.jpg)
+####  ➡️ 해결
+
+
   

@@ -99,8 +99,9 @@ wp-comments-post.php  wp-load.php
 ### - mysql 클라이언트 프로그램 설치 후 구성 정보 수정
 
 ```
-    클라이언트 프로그램 설치
+클라이언트 프로그램 설치
 # apt install mysql-client-core-5.7 -y
+
 Wordpress 설치 여부 확인
 # cd /var/www/html/
 # nano wp-config.php

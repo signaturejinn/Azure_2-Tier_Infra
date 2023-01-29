@@ -183,7 +183,7 @@ mysql> exit;
 ### - 네트워킹
 ![vmss3](https://user-images.githubusercontent.com/117608997/215339223-a9f22e23-8d66-4de5-89fd-b47c45a4d936.jpg)
 ![vmss4](https://user-images.githubusercontent.com/117608997/215339227-f31ed7e6-a4df-4094-8a81-229e780c3085.jpg)
-</br>
+</br></br>
 
 ## 6. AAG 생성
 ### - 기본 사항
@@ -212,7 +212,7 @@ mysql> exit;
 - 백엔드 대상
 
 ![aag7](https://user-images.githubusercontent.com/117608997/215339267-3d010c60-4374-4f2f-989d-1358aafb11e9.jpg)
-</br>
+</br></br>
 
 ## 7. 결과 및 Trouble Shooting
 ### - Trouble Shooting

@@ -204,11 +204,16 @@ mysql> exit;
 </br>
 
 ### - 회람 규칙 추가
+</br>
 - 수신기
+
+</br>
 ![aag6](https://user-images.githubusercontent.com/117608997/215339261-1e97c515-6450-42aa-9f1f-42b63534046a.jpg)
 </br>
 
 - 백엔드 대상
+
+</br>
 ![aag7](https://user-images.githubusercontent.com/117608997/215339267-3d010c60-4374-4f2f-989d-1358aafb11e9.jpg)
 </br>
 

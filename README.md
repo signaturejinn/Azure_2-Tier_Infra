@@ -207,7 +207,7 @@ mysql> exit;
 - 수신기
 
 ![aag6](https://user-images.githubusercontent.com/117608997/215339261-1e97c515-6450-42aa-9f1f-42b63534046a.jpg)
-</br>
+</br></br>
 
 - 백엔드 대상
 

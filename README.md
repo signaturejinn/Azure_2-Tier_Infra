@@ -1,10 +1,10 @@
-# IaC를 활용한 AWS 인프라 구축
-### Terraform File을 작성하여 AWS 인프라를 구축 및 3-Tier 웹 서비스 운영
+# Azure를 활용한 2-Tier 인프라 구축
+### Azure를 활용해 Web 서비스를 위한 인프라를 구축하고 Wordpress 가상머신과 데이터 베이스 운용
 
 </br>
 
 ## 🗓️ 진행 기간
-- 2022.10.17 ~ 2022.10.21
+- 2022.08.01 ~ 2022.08.05
 
 </br>
 
@@ -25,16 +25,12 @@
 
 #### Team Collabolation Tool
 <img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=Notion&logoColor=white"> <!--Notion-->
-<img src="https://img.shields.io/badge/Drawio-000000?style=for-the-badge&logo=Drawio&logoColor=white"> <!--Draw.io-->
 
 </br>
 
 ## 📝 상세 내용 
 ### 📌 Infra Architecture
 ![archi](https://user-images.githubusercontent.com/117608997/215339332-e862383c-69a5-4234-8555-8ab551142137.jpg)
-```
-    Azure를 활용해 Web/Was 서비스를 위한 인프라를 구축하고 Wordpress 가상머신과 데이터 베이스 운용
-```
 
 </br>
 

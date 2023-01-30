@@ -28,6 +28,17 @@
 
 </br>
 
+## 🙋🏻‍♂️ 담당 업무
+- Wordpress – MySQL 연동
+- Jumpbox를 통해서 서버 관리
+- Application Gateway를 이용해 클라이언트 접속 허용
+- Web
+    - subnet : ubuntu 18.04LTS + wordpress 가상머신 운영
+- DB Subnet: MySQL database
+- Web tier에 Autoscale 구성
+
+</br>
+
 ## 📝 상세 내용 
 ### 📌 Infra Architecture
 ![archi](https://user-images.githubusercontent.com/117608997/215339332-e862383c-69a5-4234-8555-8ab551142137.jpg)
@@ -43,12 +54,3 @@
 
 
 </br>
-
-## 🙋🏻‍♂️ 담당 업무
-- Wordpress – MySQL 연동
-- Jumpbox를 통해서 서버 관리
-- Application Gateway를 이용해 클라이언트 접속 허용
-- Web
-    - subnet : ubuntu 18.04LTS + wordpress 가상머신 운영
-- DB Subnet: MySQL database
-- Web tier에 Autoscale 구성

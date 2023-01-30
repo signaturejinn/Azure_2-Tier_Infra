@@ -52,4 +52,3 @@
     - subnet : ubuntu 18.04LTS + wordpress 가상머신 운영
 - DB Subnet: MySQL database
 - Web tier에 Autoscale 구성
-- Azure DNS 구성을 통해 도메인 기반 통신

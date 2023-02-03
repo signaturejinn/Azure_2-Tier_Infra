@@ -50,7 +50,7 @@
 #### - [Azure 2-Tier Infra](https://glen-party-257.notion.site/Azure-2-Tier-Infra-ba12623f0fde4f709fb7636f8b2f28f6)
 
 ### 🔗 Git Link
-#### - [Azure 2-Tier](https://github.com/signaturejinn/Azure_2-Tier_Infra/tree/main/Azure_2-Tier)
+#### - [Azure 2-Tier](https://github.com/signaturejinn/Azure_Infra_Project/tree/main/Azure_2-Tier/2-Tier%20Infra)
 
 
 </br>

@@ -1,7 +1,7 @@
 # Azure_2-Tier_Infra
 
 ## 0. 아키텍쳐 및 구성
-![archi](https://user-images.githubusercontent.com/117608997/215339332-e862383c-69a5-4234-8555-8ab551142137.jpg)
+![image](https://user-images.githubusercontent.com/117608997/216594656-5ddc0a18-7e61-4362-94cc-d379bf632635.png)
 - Wordpress – MySQL 연동
 - Jumpbox를 통해서 서버 관리
 - Application Gateway를 이용해 클라이언트 접속 허용
